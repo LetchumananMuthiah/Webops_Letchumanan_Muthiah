@@ -1,16 +1,34 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: url(../Images/BG.jpg) no-repeat fixed;
+    /*background: url(../Images/BG.jpg) no-repeat fixed;
     background-position: right bottom;
-    background-size: cover;
+    background-size: cover;*/
     overflow: overlay;
+}
+
+.BGimage{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    margin: 0;
+    background: url(../Images/BG.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body::-webkit-scrollbar{ width: 20px;}
 body::-webkit-scrollbar-track{ background: rgba(0, 0, 0, 0.7);}
 body::-webkit-scrollbar-thumb{ background-color: rgba(253, 173, 89, 0.5);}
 body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
+
 
 .fullForm{
     width: 50%;
@@ -25,6 +43,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     position: relative;
 }
 
+
 .fullForm h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
@@ -33,13 +52,16 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     margin-bottom: 30px;
 }
 
+
 .imgCont{
     box-sizing: border-box;
     text-align: center;
     margin-bottom: 15px;
 }
 
+
 #iitmsportslogo{ width: 160px;}
+
 
 .fullForm input[type="email"],.fullForm input[type="password"]{
     border: 0px;
@@ -58,6 +80,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     outline: none;
 }
 
+
 .fullForm input::placeholder{
     color:rgba(253, 173, 89, 0.8);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -66,6 +89,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     transition: 0.3s;
 }
 
+
 .fullForm input[type="email"]{
     background: url(../Images/mail-24-orange.png);
     opacity: 0.7;
@@ -73,6 +97,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     background-position: 0px 18px;
     background-repeat: no-repeat;
 }
+
 
 .fullForm input[type="email"]:focus{
     opacity: unset;
@@ -83,6 +108,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     background-repeat: no-repeat;
 }
 
+
 .fullForm input[type="password"]{
     background: url(../Images/lock-5-24-orange.png);
     opacity: 0.7;
@@ -90,6 +116,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     background-position: 0px 17px;
     background-repeat: no-repeat;
 }
+
 
 .fullForm input[type="password"]:focus{
     opacity: unset;
@@ -100,6 +127,7 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     background-repeat: no-repeat;
 }
 
+
 .rem{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:white;
@@ -109,21 +137,23 @@ body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
     margin-top: 10px;
 }
 
+
 .remMe input[type="checkbox"]{ cursor: pointer;}
+
 
 .links{
     margin-top: 25px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-    
+ 
+
 a{ 
     text-decoration:none; 
     color:aqua ; 
     font-weight:500; }
-a:hover{ color:rgb(245, 35, 35);}
-a:active{ color: royalblue;}
-    
-    
+a:active{ color:rgb(245, 35, 35);}
+
+
 .signup{ float: right; color:lightgreen;}
 
 
@@ -137,32 +167,29 @@ a:active{ color: royalblue;}
     font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.btype1:hover{ cursor: pointer; transition-duration: 0.4s;}
-.btype1:active{ transition-duration: 0s; transform: translateY(4px);}
+.btype1:active{ transform: translateY(4px);}
 
 
 #login{
-    background-color: rgba(253, 173, 89, 0.5);
-    color: rgb(120,31,25);
+    background-color: green; 
+    color: white;
     position: absolute;
     bottom: 0px;
     left: 0px;
     margin: 10px 20px 20px 20px;
 }
-#login:hover{ background-color: green; color: white;}
-#login:active{ background-color: grey;}
+#login:active{ background-color: rgb(48, 44, 44);}
 
 
 #cancel{
-    background-color: rgba(253, 173, 89, 0.5);
-    color: rgb(120,31,25);
+    background-color: red; 
+    color: white;
     position: absolute;
     bottom: 0px;
     right: 0px;
     margin: 10px 20px 20px 20px;
 }
-#cancel:hover{ background-color: red; color: white;}
-#cancel:active{ background-color: grey;}
+#cancel:active{ background-color: rgb(48, 44, 44);}
 
 
 .commentBox{
@@ -212,6 +239,7 @@ textarea{
 textarea:hover{ background-color:rgba(253, 173, 89, 0.3);}
 textarea:focus{ background-color:rgba(253, 173, 89, 0.5);}
 
+
 textarea::-webkit-scrollbar{
     width: 5px;
     background-color: rgba(256,256,256,0.5);
@@ -221,14 +249,13 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 
-
 #comSubmit{
     margin-top:20px;
-    background-color: rgba(253, 173, 89, 0.5);
-    color: rgb(120,31,25);
+    background-color:royalblue;
+    color: white;
 }
-#comSubmit:hover{ background-color:royalblue; color: white;}
-#comSubmit:active{ background-color: grey;}
+#comSubmit:active{ background-color: rgb(48, 44, 44);}
+
 
 .BgRef{
     margin-top: 100px;
@@ -240,9 +267,11 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 13px;
 }
 
+
 .BgRef a{color:rgb(253, 173, 89);}
 .BgRef a:hover{ color:rgb(245, 35, 35);}
 .BgRef a:active{ color: royalblue;}
+
 
 .bottomBox{
     margin-top: 0px;
@@ -252,6 +281,7 @@ textarea::-webkit-scrollbar-thumb{
     background-color: rgb(0, 0, 0);
     position: relative;
 }
+
 
 .info{
     color: rgba(253, 173, 89, 0.8);
@@ -263,6 +293,7 @@ textarea::-webkit-scrollbar-thumb{
     margin: 0px;
 }
 
+
 #conPh{
     background: url(../Images/phone-24.png);
     background-position: 10px 10px;
@@ -271,6 +302,7 @@ textarea::-webkit-scrollbar-thumb{
     padding-left:40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 #conId{
     background: url(../Images/at-24.png);
@@ -290,6 +322,7 @@ textarea::-webkit-scrollbar-thumb{
     bottom: 18%;
 }
 
+
 .footer{
     height: 35px;
     text-align:center;
@@ -299,6 +332,48 @@ textarea::-webkit-scrollbar-thumb{
     color: rgb(214,166,79) ;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:500;
+}
+
+
+@media (hover:hover){
+
+    a:hover{ color:rgb(245, 35, 35);}
+    a:active{ color: royalblue;}
+     
+    .btype1:hover{ cursor: pointer; transition-duration: 0.4s;}
+    .btype1:active{transition-duration: 0s;}
+
+    #login{
+        background-color: rgba(253, 173, 89, 0.5);
+        color: rgb(120,31,25);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        margin: 10px 20px 20px 20px;
+    }
+    #login:hover{ background-color: green; color: white;}
+    #login:active{ background-color: rgb(48, 44, 44);}
+    
+    
+    #cancel{
+        background-color: rgba(253, 173, 89, 0.5);
+        color: rgb(120,31,25);
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        margin: 10px 20px 20px 20px;
+    }
+    #cancel:hover{ background-color: red; color: white;}
+    #cancel:active{ background-color: rgb(48, 44, 44);}
+
+    #comSubmit{
+        margin-top:20px;
+        background-color: rgba(253, 173, 89, 0.5);
+        color: rgb(120,31,25);
+    }
+    #comSubmit:hover{ background-color:royalblue; color: white;}
+    #comSubmit:active{ background-color: rgb(48, 44, 44);}
+
 }
 
 
@@ -359,16 +434,3 @@ textarea::-webkit-scrollbar-thumb{
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
