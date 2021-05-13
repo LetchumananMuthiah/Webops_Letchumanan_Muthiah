@@ -1,0 +1,374 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(https://www.iitm.ac.in/sites/default/files/instigram/202005/Camous%20Life%20-Tennis%20courts%2077_1.jpg) no-repeat fixed;
+    background-position: right bottom;
+    background-size: cover;
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar{ width: 20px;}
+body::-webkit-scrollbar-track{ background: rgba(0, 0, 0, 0.7);}
+body::-webkit-scrollbar-thumb{ background-color: rgba(253, 173, 89, 0.5);}
+body::-webkit-scrollbar-thumb:hover{background-color: rgba(253, 173, 89, 0.7);}
+
+.fullForm{
+    width: 50%;
+    max-width: 400px;
+    height: 540px;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 25px;
+    background-color: rgba(90, 78, 78, 0.7);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.fullForm h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: rgb(253, 173, 89);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imgCont{
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#iitmsportslogo{ width: 160px;}
+
+.fullForm input[type="email"],.fullForm input[type="password"]{
+    border: 0px;
+    border-bottom: 2px rgba(253, 173, 89, 0.8) solid;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    box-sizing: border-box ;
+    padding: 14px 20px 8px 26px;
+    width: 100%;
+    color: rgb(253, 173, 89);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+}
+
+.fullForm input::placeholder{
+    color:rgba(253, 173, 89, 0.8);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.fullForm input[type="email"]{
+    background: url(/Images/mail-24-orange.png);
+    opacity: 0.7;
+    background-size: 17px 17px; 
+    background-position: 0px 18px;
+    background-repeat: no-repeat;
+}
+
+.fullForm input[type="email"]:focus{
+    opacity: unset;
+    border-bottom: 2px solid white;
+    background: url(/Images/mail-24-white.png);
+    background-size: 18px 18px; 
+    background-position: 0px 16px;
+    background-repeat: no-repeat;
+}
+
+.fullForm input[type="password"]{
+    background: url(/Images/lock-5-24-orange.png);
+    opacity: 0.7;
+    background-size: 17px 17px; 
+    background-position: 0px 17px;
+    background-repeat: no-repeat;
+}
+
+.fullForm input[type="password"]:focus{
+    opacity: unset;
+    border-bottom: 2px solid white;
+    background: url(/Images/lock-5-24-white.png);
+    background-size: 18px 18px; 
+    background-position: 0px 15px;
+    background-repeat: no-repeat;
+}
+
+.rem{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    font-weight: 500;
+    display: inline-block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.remMe input[type="checkbox"]{ cursor: pointer;}
+
+.links{
+    margin-top: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+a{ 
+    text-decoration:none; 
+    color:aqua ; 
+    font-weight:500; }
+a:hover{ color:rgb(245, 35, 35);}
+a:active{ color: royalblue;}
+    
+    
+.signup{ float: right; color:lightgreen;}
+
+
+.btype1{
+    margin: 0px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btype1:hover{ cursor: pointer; transition-duration: 0.4s;}
+.btype1:active{ transition-duration: 0s; transform: translateY(4px);}
+
+
+#login{
+    background-color: rgba(253, 173, 89, 0.5);
+    color: rgb(120,31,25);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 10px 20px 20px 20px;
+}
+#login:hover{ background-color: green; color: white;}
+#login:active{ background-color: grey;}
+
+
+#cancel{
+    background-color: rgba(253, 173, 89, 0.5);
+    color: rgb(120,31,25);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px 20px 20px 20px;
+}
+#cancel:hover{ background-color: red; color: white;}
+#cancel:active{ background-color: grey;}
+
+
+.commentBox{
+    width: 50%;
+    max-width: 400px;
+    height: 290px;
+    margin: auto;
+    margin-top:40px;
+    padding: 20px;
+    border-radius: 25px;
+    box-sizing: border-box ;
+    background-color: rgba(90, 78, 78, 0.7);
+    text-align: center;
+}
+
+
+.commentBox p{
+    color: rgb(253, 173, 89);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+textarea{
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:15px;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgba(206, 187, 187, 0.4);
+    color: rgb(134, 10, 20);
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+textarea:hover{ background-color:rgba(253, 173, 89, 0.3);}
+textarea:focus{ background-color:rgba(253, 173, 89, 0.5);}
+
+textarea::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgba(256,256,256,0.5);
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color:rgba(134, 10, 20,0.7) ;   
+}
+
+
+
+#comSubmit{
+    margin-top:20px;
+    background-color: rgba(253, 173, 89, 0.5);
+    color: rgb(120,31,25);
+}
+#comSubmit:hover{ background-color:royalblue; color: white;}
+#comSubmit:active{ background-color: grey;}
+
+.BgRef{
+    margin-top: 100px;
+    background-color: none;;
+    height: 30px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+.BgRef a{color:rgb(253, 173, 89);}
+.BgRef a:hover{ color:rgb(245, 35, 35);}
+.BgRef a:active{ color: royalblue;}
+
+.bottomBox{
+    margin-top: 0px;
+    height: 130px;
+    padding-top:10px;
+    padding-left: 5px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.info{
+    color: rgba(253, 173, 89, 0.8);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: fit-content;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#conPh{
+    background: url(/Images/phone-24.png);
+    background-position: 10px 10px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left:40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#conId{
+    background: url(/Images/at-24.png);
+    background-position: 10px 10px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left:40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#iitmlogo{
+    width: 90px;
+    border-radius: 50%;
+    position:absolute;
+    right: 6%;
+    bottom: 18%;
+}
+
+.footer{
+    height: 35px;
+    text-align:center;
+    padding-top:4px;
+    box-sizing: border-box;
+    background-color:rgb(20, 20, 20);
+    color: rgb(214,166,79) ;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+}
+
+
+@media screen and (max-width: 700px){
+    
+    .fullForm{ height: 600px;}
+
+    #iitmsportslogo{ width: 120px;}
+
+    .signup{ 
+        display: block;
+        float:none;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    #forgotpwd{
+        display: block;
+        text-align:center;
+        margin-bottom: 12px;
+    }
+    
+   .remMe{
+       text-align: center;
+       box-sizing: border-box;
+       margin-bottom: 30px;
+    }
+
+    #login{
+        position: absolute;
+        right: 10px;
+        left: 10px;
+        width: 40%;
+        padding: 8px 0px;
+        margin: auto;
+        bottom: 70px;  
+    }
+
+    #cancel{
+        position: absolute;
+        right: 10px;
+        left: 10px;
+        width: 40%;
+        padding: 8px 0px;
+        margin: auto;
+        bottom: 20px;
+    }
+
+    .bottomBox{ height:250px;}
+
+    .info{ margin: 0px auto; }
+
+    #iitmlogo{ position:unset; text-align: center;}
+    .iitmlogo{ 
+        text-align:center; 
+        margin-top: 10px;
+        height: auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
