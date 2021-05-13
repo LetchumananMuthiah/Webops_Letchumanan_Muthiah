@@ -1,28 +1,15 @@
 body{
     margin: 0px;
     padding: 0px;
-    /*background: url(../Images/BG.jpg) no-repeat fixed;
+    background: url(../Images/BG.jpg) no-repeat center center fixed;
     background-position: right bottom;
-    background-size: cover;*/
-    overflow: overlay;
-}
-
-.BGimage{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    margin: 0;
-    background: url(../Images/BG.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: overlay;
 }
+
 
 body::-webkit-scrollbar{ width: 20px;}
 body::-webkit-scrollbar-track{ background: rgba(0, 0, 0, 0.7);}
@@ -171,25 +158,25 @@ a:active{ color:rgb(245, 35, 35);}
 
 
 #login{
-    background-color: green; 
-    color: white;
+    background-color: rgba(253, 173, 89, 0.5);
+    color: rgb(120,31,25);
     position: absolute;
     bottom: 0px;
     left: 0px;
     margin: 10px 20px 20px 20px;
 }
-#login:active{ background-color: rgb(48, 44, 44);}
+#login:active{ background-color: green; color: white;}
 
 
 #cancel{
-    background-color: red; 
-    color: white;
+    background-color: rgba(253, 173, 89, 0.5);
+    color: rgb(120,31,25);
     position: absolute;
     bottom: 0px;
     right: 0px;
     margin: 10px 20px 20px 20px;
 }
-#cancel:active{ background-color: rgb(48, 44, 44);}
+#cancel:active{ background-color: red; color: white;}
 
 
 .commentBox{
@@ -251,10 +238,11 @@ textarea::-webkit-scrollbar-thumb{
 
 #comSubmit{
     margin-top:20px;
-    background-color:royalblue;
-    color: white;
+    background-color: rgba(253, 173, 89, 0.5);
+    color: rgb(120,31,25);
+    
 }
-#comSubmit:active{ background-color: rgb(48, 44, 44);}
+#comSubmit:active{ background-color:royalblue; color: white;}
 
 
 .BgRef{
