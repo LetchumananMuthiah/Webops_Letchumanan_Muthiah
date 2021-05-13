@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: url(https://www.iitm.ac.in/sites/default/files/instigram/202005/Camous%20Life%20-Tennis%20courts%2077_1.jpg) no-repeat fixed;
+    background: url(../Images/BG.jpg) no-repeat fixed;
     background-position: right bottom;
     background-size: cover;
     overflow: overlay;
