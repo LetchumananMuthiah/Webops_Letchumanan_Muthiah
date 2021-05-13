@@ -164,6 +164,8 @@ a:active{ color:rgb(245, 35, 35);}
     bottom: 0px;
     left: 0px;
     margin: 10px 20px 20px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 #login:active{ background-color: green; color: white;}
 
@@ -175,6 +177,8 @@ a:active{ color:rgb(245, 35, 35);}
     bottom: 0px;
     right: 0px;
     margin: 10px 20px 20px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 #cancel:active{ background-color: red; color: white;}
 
@@ -329,7 +333,6 @@ textarea::-webkit-scrollbar-thumb{
     a:active{ color: royalblue;}
      
     .btype1:hover{ cursor: pointer; transition-duration: 0.4s;}
-    .btype1:active{transition-duration: 0s;}
 
     #login{
         background-color: rgba(253, 173, 89, 0.5);
